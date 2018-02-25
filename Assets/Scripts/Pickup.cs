@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-	// Update is called once per frame
-	void OnTriggerEnter2D (Collider2D info)
+    // Update is called once per frame
+    void OnTriggerEnter2D(Collider2D info)
     {
-		if (info.tag == "Player")
+        if (info.tag == "Player")
         {
             Destroy(gameObject);
+            info.gameObject.SendMessage("gainHealth", 1);
         }
-	}
+    }
 }

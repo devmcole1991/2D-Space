@@ -12,6 +12,8 @@ namespace Assets.GameLogic.Core
 		private SimulatePhysics physics;
 		private IPlatformCharacterController controller;
 
+        [SerializeField] private int maxHealth;
+        [SerializeField] private int health;
 		[SerializeField] private float runSpeed;
 		[SerializeField] private float jumpSpeed;
 
@@ -55,5 +57,13 @@ namespace Assets.GameLogic.Core
 				velocity.SetY(jumpSpeed);
 			}
 		}
+        
+        public void gainHealth(int health)
+        {
+            if (this.health != this.maxHealth)
+                this.health++;
+            else
+                ;
+        }
 	}
 }
