@@ -10,7 +10,6 @@ public class Pickup : MonoBehaviour
         if (info.tag == "Player")
         {
             Destroy(gameObject);
-            info.gameObject.SendMessage("gainHealth", 1);
         }
     }
 }
