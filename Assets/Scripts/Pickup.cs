@@ -1,15 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Events;
 
-public class Pickup : MonoBehaviour
+namespace Assets.GameLogic.Core
 {
-    // Update is called once per frame
-    void OnTriggerEnter2D(Collider2D info)
-    {
-        if (info.tag == "Player")
-        {
-            Destroy(gameObject);
-        }
-    }
+	public class Pickup : MonoBehaviour
+	{
+		[SerializeField] private UnityEvent PickedUp;
+
+		private void OnTriggerEnter2D(Collider2D collision)
+		{
+			PickedUp.Invoke();
+		}
+	}
 }
