@@ -13,15 +13,17 @@ namespace Assets.GameLogic.Core
 		private static Updater<Velocity> velocityUpdater = new Updater<Velocity>();
 		private static Updater<SimulatePhysics> simulatePhysicsUpdater = new Updater<SimulatePhysics>();
 		private static Updater<MovingPlatform> movingPlatformUpdater = new Updater<MovingPlatform>();
+        private static Updater<PlayerAnimations> playerAnimationsUpdater = new Updater<PlayerAnimations>();
 
-		public static IUpdater<IUpdatable> GeneralUpdater { get { return generalUpdater; } }
+        public static IUpdater<IUpdatable> GeneralUpdater { get { return generalUpdater; } }
 		public static IUpdater<PlayerController> PlayerControllerUpdater { get { return playerControllerUpdater; } }
 		public static IUpdater<PlatformCharacter> PlatformCharacterUpdater { get { return platformCharacterUpdater; } }
 		public static IUpdater<Velocity> VelocityUpdater { get{ return velocityUpdater; } }
 		public static IUpdater<SimulatePhysics> SimulatePhysicsUpdater { get { return simulatePhysicsUpdater; } }
 		public static IUpdater<MovingPlatform> MovingPlatformUpdater { get { return movingPlatformUpdater; } }
-		
-		private void Awake()
+        public static IUpdater<PlayerAnimations> PlayerAnimationsUpdater { get { return playerAnimationsUpdater; } }
+
+        private void Awake()
         {
             if (instance == null)
             {
@@ -41,6 +43,7 @@ namespace Assets.GameLogic.Core
         {
 			playerControllerUpdater.Update();
 			platformCharacterUpdater.Update();
+            playerAnimationsUpdater.Update();
 			velocityUpdater.Update();
 			simulatePhysicsUpdater.Update();
 			movingPlatformUpdater.Update();
