@@ -4,7 +4,7 @@ using Assets.Update;
 namespace Assets.GameLogic.Core
 {
 	[RequireComponent(typeof(Velocity))]
-	public class SimulatePhysics : MonoBehaviour, IUpdatable
+	public class SimulatePhysics : MovementBase
 	{
 		[System.Serializable]
 		private struct CollisionRect
@@ -19,18 +19,15 @@ namespace Assets.GameLogic.Core
 		[SerializeField] private LayerMask onewayMask;
 		[SerializeField] private float gravityScale = 1f;
 		[SerializeField] private CollisionRect rect;
-
-		new private Transform transform;
 		private Velocity velocity;
 
-		public Vector3 PreviousPosition { get; private set; }
+		public Vector3 Velocity { get { return velocity.Real; } }
 		public MovingPlatform Transport { get; private set; }
 		public Collider2D Ground { get; private set; }
 
-		private void Awake()
+		protected override void Awake()
 		{
-			transform = base.transform;
-			PreviousPosition = transform.position;
+			base.Awake();
 			velocity = GetComponent<Velocity>();
 		}
 
@@ -164,21 +161,21 @@ namespace Assets.GameLogic.Core
 
 		}
 
-		public void Move(Vector3Int delta)
-		{
-			MoveAndCollide(delta);
-		}
-
-		public void OnUpdate()
+		protected override void Move()
 		{
 			MoveAndCollide(velocity.Delta);
 			ApplyGravity();
 		}
 
+		public void Move(Vector3Int delta)
+		{
+			MoveAndCollide(delta);
+		}
+
 #if UNITY_EDITOR
 		private void OnDrawGizmosSelected()
 		{
-			var position = base.transform.position;
+			var position = GetComponent<Transform>().position;
 			var tl = position + new Vector3(rect.leftOffset, rect.topOffset);
 			var tr = position + new Vector3(rect.rightOffset, rect.topOffset);
 			var bl = position + new Vector3(rect.leftOffset, rect.bottomOffset);

@@ -4,16 +4,16 @@ using Assets.Update;
 
 namespace Assets.GameLogic.Core
 {
-	[RequireComponent(typeof(SimulatePhysics))]
+	[RequireComponent(typeof(MovementBase))]
 	public class MovingPlatform : MonoBehaviour, IUpdatable
 	{
-		private SimulatePhysics physics;
+		private MovementBase physics;
 		private List<SimulatePhysics> passengers = new List<SimulatePhysics>();
 		new private Transform transform;
 
 		private void Awake()
 		{
-			physics = GetComponent<SimulatePhysics>();
+			physics = GetComponent<MovementBase>();
 			transform = base.transform;
 		}
 
@@ -29,16 +29,21 @@ namespace Assets.GameLogic.Core
 
 		private void MovePassengers()
 		{
+			var offset = new Vector3(10000, 10000);
 			int count = passengers.Count;
 			var deltaPosition = transform.position - physics.PreviousPosition;
 			var delta = new Vector3Int((int)deltaPosition.x, (int)deltaPosition.y, 0);
 			SimulatePhysics passenger;
+
+			transform.position += offset;
 
 			for (int i = count - 1; i >= 0; --i)
 			{
 				passenger = passengers[i];
 				passenger.Move(delta);
 			}
+
+			transform.position -= offset;
 		}
 
 		public void AddPassenger(SimulatePhysics passenger)

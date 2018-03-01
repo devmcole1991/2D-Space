@@ -11,14 +11,18 @@ namespace Assets.GameLogic.Core
 		private static Updater<PlayerController> playerControllerUpdater = new Updater<PlayerController>();
 		private static Updater<PlatformCharacter> platformCharacterUpdater = new Updater<PlatformCharacter>();
 		private static Updater<Velocity> velocityUpdater = new Updater<Velocity>();
+		private static Updater<SimpleMovement> simpleMovementUpdater = new Updater<SimpleMovement>();
 		private static Updater<SimulatePhysics> simulatePhysicsUpdater = new Updater<SimulatePhysics>();
+		private static Updater<FollowPath> followPathUpdater = new Updater<FollowPath>();
 		private static Updater<MovingPlatform> movingPlatformUpdater = new Updater<MovingPlatform>();
 
 		public static IUpdater<IUpdatable> GeneralUpdater { get { return generalUpdater; } }
 		public static IUpdater<PlayerController> PlayerControllerUpdater { get { return playerControllerUpdater; } }
 		public static IUpdater<PlatformCharacter> PlatformCharacterUpdater { get { return platformCharacterUpdater; } }
 		public static IUpdater<Velocity> VelocityUpdater { get{ return velocityUpdater; } }
+		public static IUpdater<SimpleMovement> SimpleMovementUpdater { get { return simpleMovementUpdater; } }
 		public static IUpdater<SimulatePhysics> SimulatePhysicsUpdater { get { return simulatePhysicsUpdater; } }
+		public static IUpdater<FollowPath> FollowPathUpdater { get { return followPathUpdater; } }
 		public static IUpdater<MovingPlatform> MovingPlatformUpdater { get { return movingPlatformUpdater; } }
 		
 		private void Awake()
@@ -42,10 +46,12 @@ namespace Assets.GameLogic.Core
 			playerControllerUpdater.Update();
 			platformCharacterUpdater.Update();
 			velocityUpdater.Update();
-			simulatePhysicsUpdater.Update();
+			followPathUpdater.Update();
 			movingPlatformUpdater.Update();
+			simpleMovementUpdater.Update();
+			simulatePhysicsUpdater.Update();
 
-            generalUpdater.Update();
+			generalUpdater.Update();
         }
     }
 }

@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.3.1f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -340,19 +338,27 @@
     <Compile Include="Assets\Scripts\GameEvent\GameEvent.cs" />
     <Compile Include="Assets\Scripts\GameEvent\GameEventListener.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
-    <Compile Include="Assets\Scripts\IntegerValue.cs" />
+    <Compile Include="Assets\Scripts\Items\HealthPot.cs" />
+    <Compile Include="Assets\Scripts\Items\ItemBase.cs" />
     <Compile Include="Assets\Scripts\Managers\UpdateManager.cs" />
+    <Compile Include="Assets\Scripts\Movement\FollowPath.cs" />
+    <Compile Include="Assets\Scripts\Movement\MovementBase.cs" />
+    <Compile Include="Assets\Scripts\Movement\SimpleMovement.cs" />
+    <Compile Include="Assets\Scripts\Movement\SimulatePhysics.cs" />
+    <Compile Include="Assets\Scripts\Movement\SubPixelVelocity.cs" />
+    <Compile Include="Assets\Scripts\Movement\Velocity.cs" />
     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
     <Compile Include="Assets\Scripts\Pickup.cs" />
     <Compile Include="Assets\Scripts\PlatformCharacter\IPlatformCharacterController.cs" />
     <Compile Include="Assets\Scripts\PlatformCharacter\PlatformCharacter.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\SimulatePhysics.cs" />
     <Compile Include="Assets\Scripts\Static\WorldData.cs" />
     <Compile Include="Assets\Scripts\Updater\IUpdatable.cs" />
     <Compile Include="Assets\Scripts\Updater\IUpdater.cs" />
     <Compile Include="Assets\Scripts\Updater\Updater.cs" />
-    <Compile Include="Assets\Scripts\Velocity.cs" />
+    <Compile Include="Assets\Scripts\VariableReferences\IntReference.cs" />
+    <Compile Include="Assets\Scripts\VariableReferences\IntReferenceDrawer.cs" />
+    <Compile Include="Assets\Scripts\VariableReferences\IntVariable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\2D Pixel Spacecraft Tileset\Get FREE Custom Pixel Art From Me.txt" />
