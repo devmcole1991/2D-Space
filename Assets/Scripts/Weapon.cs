@@ -44,10 +44,12 @@ namespace Assets.GameLogic.Core
             if (renderer.flipX)
             {
                 firePoint.localPosition = new Vector3(-21, 21, 0);
+                firePoint.localRotation = new Quaternion(0, 180, 0, 0);
             }
             else
             {
                 firePoint.localPosition = new Vector3(21, 21, 0);
+                firePoint.localRotation = new Quaternion(0, 0, 0, 0);
             }
 
             if (fireRate == 0)
