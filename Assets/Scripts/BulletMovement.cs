@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using Assets.Update;
+using UnityEngine.Events;
 
 namespace Assets.GameLogic.Core
 {
     public class BulletMovement : MonoBehaviour, IUpdatable
     {
         [SerializeField] private int bulletSpeed;
+        [SerializeField] private int Damage;
 
         private void OnEnable()
         {
@@ -19,7 +21,6 @@ namespace Assets.GameLogic.Core
 
         public void OnUpdate()
         {
-            // Check player facing
             transform.Translate(Vector3.right * Time.deltaTime * bulletSpeed);
         }
     }

@@ -17,7 +17,7 @@ TagManager:
   - Oneway
   - Solid
   - Pickup
-  - 
+  - Bullet
   - 
   - 
   - 
@@ -43,4 +43,7 @@ TagManager:
     locked: 0
   - name: Pickups
     uniqueID: 3472393807
+    locked: 0
+  - name: Bullets
+    uniqueID: 2802398905
     locked: 0

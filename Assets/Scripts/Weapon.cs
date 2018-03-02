@@ -9,7 +9,6 @@ namespace Assets.GameLogic.Core
         private SpriteRenderer renderer;
 
         [SerializeField] private float fireRate;
-        [SerializeField] private float Damage;
         [SerializeField] private float timeToFire;
         public LayerMask whatToHit;
 

@@ -2418,12 +2418,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1787d3b7a5e492429364d5ef565ae4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 4
-  Damage: 0
+  fireRate: 5
   timeToFire: 0
   whatToHit:
     serializedVersion: 2
-    m_Bits: 4294967035
+    m_Bits: 4294967291
   BulletPrefab: {fileID: 4277593389538780, guid: 748fe423ecf6a334b87fa2e813545152,
     type: 2}
   MuzzleFlashPrefab: {fileID: 4703819105343532, guid: 09956762ddc438c469adc4741398ae38,
