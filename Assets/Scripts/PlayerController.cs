@@ -11,8 +11,10 @@ namespace Assets.GameLogic.Core
 		public int Right { get; private set; }
 		public int JumpPressed { get; private set; }
 		public int JumpHeld { get; private set; }
+        public int ShootPressed { get; private set; }
+        public int ShootHeld { get; private set; }
 
-		private void OnEnable()
+        private void OnEnable()
 		{
 			UpdateManager.PlayerControllerUpdater.Register(this);
 		}
@@ -30,6 +32,8 @@ namespace Assets.GameLogic.Core
 			Right = Input.GetKey(KeyCode.D) ? 1 : 0;
 			JumpPressed = Input.GetKeyDown(KeyCode.Space) ? 1 : 0;
 			JumpHeld = Input.GetKey(KeyCode.Space) ? 1 : 0;
-		}
+            ShootPressed = Input.GetKeyDown(KeyCode.Mouse0) ? 1 : 0;
+            ShootHeld = Input.GetKey(KeyCode.Mouse0) ? 1 : 0;
+        }
 	}
 }

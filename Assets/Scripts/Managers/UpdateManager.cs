@@ -14,6 +14,8 @@ namespace Assets.GameLogic.Core
 		private static Updater<SimulatePhysics> simulatePhysicsUpdater = new Updater<SimulatePhysics>();
 		private static Updater<MovingPlatform> movingPlatformUpdater = new Updater<MovingPlatform>();
         private static Updater<PlayerAnimations> playerAnimationsUpdater = new Updater<PlayerAnimations>();
+        private static Updater<Weapon> weaponUpdater = new Updater<Weapon>();
+        private static Updater<BulletMovement> bulletUpdater = new Updater<BulletMovement>();
 
         public static IUpdater<IUpdatable> GeneralUpdater { get { return generalUpdater; } }
 		public static IUpdater<PlayerController> PlayerControllerUpdater { get { return playerControllerUpdater; } }
@@ -22,6 +24,8 @@ namespace Assets.GameLogic.Core
 		public static IUpdater<SimulatePhysics> SimulatePhysicsUpdater { get { return simulatePhysicsUpdater; } }
 		public static IUpdater<MovingPlatform> MovingPlatformUpdater { get { return movingPlatformUpdater; } }
         public static IUpdater<PlayerAnimations> PlayerAnimationsUpdater { get { return playerAnimationsUpdater; } }
+        public static IUpdater<Weapon> WeaponUpdater { get { return weaponUpdater; } }
+        public static IUpdater<BulletMovement> BulletUpdater { get { return bulletUpdater; } }
 
         private void Awake()
         {
@@ -44,9 +48,11 @@ namespace Assets.GameLogic.Core
 			playerControllerUpdater.Update();
 			platformCharacterUpdater.Update();
             playerAnimationsUpdater.Update();
-			velocityUpdater.Update();
+            velocityUpdater.Update();
 			simulatePhysicsUpdater.Update();
-			movingPlatformUpdater.Update();
+            weaponUpdater.Update();
+            bulletUpdater.Update();
+            movingPlatformUpdater.Update();
 
             generalUpdater.Update();
         }

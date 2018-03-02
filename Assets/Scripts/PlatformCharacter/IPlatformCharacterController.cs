@@ -8,5 +8,7 @@
 		int Right { get; }
 		int JumpPressed { get; }
 		int JumpHeld { get; }
-	}
+        int ShootPressed { get; }
+        int ShootHeld { get; }
+    }
 }
