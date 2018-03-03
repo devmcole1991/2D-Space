@@ -123,10 +123,19 @@
      <Compile Include="Assets\Scripts\Updater\Updater.cs" />
      <Compile Include="Assets\Scripts\Velocity.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
-     <None Include="Assets\2D Pixel Spacecraft Tileset\Get FREE Custom Pixel Art From Me.txt" />
-     <None Include="Assets\2D Pixel Spacecraft Tileset\How to use Tilesets.txt" />
+     <Compile Include="Assets\Store Assets\Marines_And_Turrets\Scripts\Blade_Turret.cs" />
+     <Compile Include="Assets\Store Assets\Marines_And_Turrets\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Store Assets\Marines_And_Turrets\Scripts\Camera16x9.cs" />
+     <Compile Include="Assets\Store Assets\Marines_And_Turrets\Scripts\Example_Motion_Controller.cs" />
+     <Compile Include="Assets\Store Assets\Marines_And_Turrets\Scripts\Grenade_Target.cs" />
+     <Compile Include="Assets\Store Assets\Marines_And_Turrets\Scripts\Gun_Turret.cs" />
+     <Compile Include="Assets\Store Assets\Marines_And_Turrets\Scripts\Shield_Turret.cs" />
+     <None Include="Assets\Store Assets\Marines_And_Turrets\Contact_Info.txt" />
+     <None Include="Assets\Store Assets\2D Pixel Spacecraft Tileset\Get FREE Custom Pixel Art From Me.txt" />
+     <None Include="Assets\Store Assets\2D Pixel Spacecraft Tileset\How to use Tilesets.txt" />
+     <None Include="Assets\Store Assets\Marines_And_Turrets\General_Info.txt" />
      <None Include="Assets\Cinemachine\ReleaseNotes.txt" />
-     <None Include="Assets\2D Pixel Spacecraft Tileset\Read_Me.txt" />
+     <None Include="Assets\Store Assets\2D Pixel Spacecraft Tileset\Read_Me.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
