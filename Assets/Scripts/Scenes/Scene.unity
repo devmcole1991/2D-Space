@@ -2422,7 +2422,7 @@ MonoBehaviour:
   timeToFire: 0
   whatToHit:
     serializedVersion: 2
-    m_Bits: 4294967291
+    m_Bits: 4294962939
   BulletPrefab: {fileID: 4277593389538780, guid: 748fe423ecf6a334b87fa2e813545152,
     type: 2}
   MuzzleFlashPrefab: {fileID: 4703819105343532, guid: 09956762ddc438c469adc4741398ae38,

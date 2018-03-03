@@ -8,6 +8,13 @@ namespace Assets.GameLogic.Core
     {
         [SerializeField] private int bulletSpeed;
         [SerializeField] private int Damage;
+        [SerializeField] private UnityEvent BulletHit;
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            BulletHit.Invoke();
+            Destroy(gameObject);
+        }
 
         private void OnEnable()
         {
