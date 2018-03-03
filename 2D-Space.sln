@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2D-Space", "2D-Space.csproj", "{BA4B3F3C-2895-9310-DA89-2EB4D7A60312}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2D-Space.Editor", "2D-Space.Editor.csproj", "{16AF82C6-E8EE-3120-49C1-099921792FF9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,10 +13,6 @@ Global
 		{BA4B3F3C-2895-9310-DA89-2EB4D7A60312}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA4B3F3C-2895-9310-DA89-2EB4D7A60312}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA4B3F3C-2895-9310-DA89-2EB4D7A60312}.Release|Any CPU.Build.0 = Release|Any CPU
-		{16AF82C6-E8EE-3120-49C1-099921792FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{16AF82C6-E8EE-3120-49C1-099921792FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{16AF82C6-E8EE-3120-49C1-099921792FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{16AF82C6-E8EE-3120-49C1-099921792FF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
