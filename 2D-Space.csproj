@@ -283,6 +283,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BoundingBox\BoundingBox.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\DestroyOnAwake.cs" />
     <Compile Include="Assets\Scripts\GameEvent\GameEvent.cs" />
@@ -303,6 +304,7 @@
     <Compile Include="Assets\Scripts\Pickup\Pickup.cs" />
     <Compile Include="Assets\Scripts\PlatformCharacter\IPlatformCharacterController.cs" />
     <Compile Include="Assets\Scripts\PlatformCharacter\PlatformCharacter.cs" />
+    <Compile Include="Assets\Scripts\PlayerAnimations.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\ProbabilitySpawner\ProbabilitySpawner.cs" />
     <Compile Include="Assets\Scripts\ProbabilitySpawner\ProbabilitySpawnerEditor.cs" />
@@ -321,11 +323,14 @@
     <Compile Include="Assets\Scripts\Updater\IUpdatable.cs" />
     <Compile Include="Assets\Scripts\Updater\IUpdater.cs" />
     <Compile Include="Assets\Scripts\Updater\Updater.cs" />
+    <Compile Include="Assets\Scripts\Weapon.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\2D Pixel Spacecraft Tileset\Get FREE Custom Pixel Art From Me.txt" />
-    <None Include="Assets\2D Pixel Spacecraft Tileset\How to use Tilesets.txt" />
-    <None Include="Assets\2D Pixel Spacecraft Tileset\Read_Me.txt" />
+    <None Include="Assets\StoreAssets\2D Pixel Spacecraft Tileset\Get FREE Custom Pixel Art From Me.txt" />
+    <None Include="Assets\StoreAssets\2D Pixel Spacecraft Tileset\How to use Tilesets.txt" />
+    <None Include="Assets\StoreAssets\2D Pixel Spacecraft Tileset\Read_Me.txt" />
+    <None Include="Assets\StoreAssets\Marines_And_Turrets\Contact_Info.txt" />
+    <None Include="Assets\StoreAssets\Marines_And_Turrets\General_Info.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

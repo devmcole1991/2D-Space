@@ -13,6 +13,18 @@ namespace Assets.GameLogic.Core
 		private void OnEnable()
 		{
 			pairListProp = serializedObject.FindProperty("scoreGameObjectPairs");
+			UpdateScoreSum();
+		}
+
+		private void UpdateScoreSum()
+		{
+			scoreSum = 0;
+			int count = pairListProp.arraySize;
+
+			for (int i = 0; i < count; ++i)
+			{
+				scoreSum += pairListProp.GetArrayElementAtIndex(i).FindPropertyRelative("score").intValue;
+			}
 		}
 
 		public override void OnInspectorGUI()

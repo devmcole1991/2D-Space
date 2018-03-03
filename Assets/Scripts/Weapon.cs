@@ -6,7 +6,7 @@ namespace Assets.GameLogic.Core
     public class Weapon : MonoBehaviour, IUpdatable
     {
         private IPlatformCharacterController controller;
-        private SpriteRenderer renderer;
+        new private SpriteRenderer renderer;
 
         [SerializeField] private float fireRate;
         [SerializeField] private float timeToFire;
@@ -30,12 +30,12 @@ namespace Assets.GameLogic.Core
 
         private void OnEnable()
         {
-            UpdateManager.WeaponUpdater.Register(this);
+            UpdateManager.GeneralUpdater.Register(this);
         }
 
         private void OnDisable()
         {
-            UpdateManager.WeaponUpdater.Deregister(this);
+            UpdateManager.GeneralUpdater.Deregister(this);
         }
 
         public void OnUpdate()
@@ -53,16 +53,16 @@ namespace Assets.GameLogic.Core
 
             if (fireRate == 0)
             {
-                if (controller.ShootPressed == 1)
-                    Shoot();
+                //if (controller.ShootPressed == 1)
+                //    Shoot();
             }
             else
             {
-                if (controller.ShootHeld == 1 && Time.time > timeToFire)
-                {
-                    timeToFire = Time.time + 1 / fireRate;
-                    Shoot();
-                }
+                //if (controller.ShootHeld == 1 && Time.time > timeToFire)
+                //{
+                //    timeToFire = Time.time + 1 / fireRate;
+                //    Shoot();
+                //}
             }
         }
 
