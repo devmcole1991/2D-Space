@@ -16,11 +16,17 @@ namespace Assets.GameLogic.Core
         public Transform MuzzleFlashPrefab;
         Transform firePoint;
 
+        Vector2 posFirePoint;
+        Vector2 negFirePoint;
+
         private void Awake()
         {
             controller = GetComponent<IPlatformCharacterController>();
             renderer = GetComponent<SpriteRenderer>();
             firePoint = transform.Find("FirePoint");
+
+            posFirePoint = new Vector2(firePoint.localPosition.x, firePoint.localPosition.y);
+            negFirePoint = new Vector2(-firePoint.localPosition.x, firePoint.localPosition.y);
 
             if (firePoint == null)
             {
@@ -42,12 +48,12 @@ namespace Assets.GameLogic.Core
         {
             if (renderer.flipX)
             {
-                firePoint.localPosition = new Vector3(-21, 21, 0);
+                firePoint.localPosition = new Vector3(negFirePoint.x, negFirePoint.y, 0);
                 firePoint.localRotation = new Quaternion(0, 180, 0, 0);
             }
             else
             {
-                firePoint.localPosition = new Vector3(21, 21, 0);
+                firePoint.localPosition = new Vector3(posFirePoint.x, posFirePoint.y, 0);
                 firePoint.localRotation = new Quaternion(0, 0, 0, 0);
             }
 
