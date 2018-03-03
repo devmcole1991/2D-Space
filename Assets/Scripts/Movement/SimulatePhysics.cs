@@ -1,24 +1,14 @@
 ﻿using UnityEngine;
-using Assets.Update;
 
 namespace Assets.GameLogic.Core
 {
 	[RequireComponent(typeof(Velocity))]
 	public class SimulatePhysics : MovementBase
 	{
-		[System.Serializable]
-		private struct CollisionRect
-		{
-			public int topOffset;
-			public int bottomOffset;
-			public int rightOffset;
-			public int leftOffset;
-		}
-
 		[SerializeField] private LayerMask solidMask;
 		[SerializeField] private LayerMask onewayMask;
 		[SerializeField] private float gravityScale = 1f;
-		[SerializeField] private CollisionRect rect;
+		[SerializeField] private BoundingBox bbox;
 		private Velocity velocity;
 
 		public Vector3 Velocity { get { return velocity.Real; } }
@@ -52,8 +42,8 @@ namespace Assets.GameLogic.Core
 		private void MoveAndCollide(Vector3 delta)
 		{
 			var position = transform.position;
-			var origin = position + new Vector3(rect.rightOffset + rect.leftOffset, rect.topOffset + rect.bottomOffset) / 2f;
-			var size = new Vector2(rect.rightOffset - rect.leftOffset, rect.topOffset - rect.bottomOffset);
+			var origin = position + new Vector3(bbox.RightOffset + bbox.LeftOffset, bbox.TopOffset + bbox.BottomOffset) / 2f;
+			var size = new Vector2(bbox.RightOffset - bbox.LeftOffset, bbox.TopOffset - bbox.BottomOffset);
 			var initialDelta = delta;
 
 			ResolveHorizontal(ref position, ref delta, ref origin, size);
@@ -123,36 +113,36 @@ namespace Assets.GameLogic.Core
 
 		private void ResolveOneway(ref Vector3 position)
 		{
-			var hits = Physics2D.LinecastAll(position + new Vector3(rect.leftOffset, rect.bottomOffset),
-					position + new Vector3(rect.rightOffset, rect.bottomOffset), onewayMask);
+			var hits = Physics2D.LinecastAll(position + new Vector3(bbox.LeftOffset, bbox.BottomOffset),
+					position + new Vector3(bbox.RightOffset, bbox.BottomOffset), onewayMask);
 
 			for (int i = 0; i < hits.Length; ++i)
 			{
 				var hit = hits[i];
 
-				if (hit && hit.collider.bounds.max.y < PreviousPosition.y + rect.bottomOffset)
+				if (hit && hit.collider.bounds.max.y < PreviousPosition.y + bbox.BottomOffset)
 				{
 					velocity.StopVertical();
-					position.y = hit.collider.bounds.max.y - rect.bottomOffset + 1;
+					position.y = hit.collider.bounds.max.y - bbox.BottomOffset + 1;
 				}
 			}
 		}
 
 		private void CheckGround(ref Vector3 position)
 		{
-			var hit = Physics2D.Linecast(position + new Vector3(rect.leftOffset, rect.bottomOffset - 1),
-					position + new Vector3(rect.rightOffset, rect.bottomOffset - 1), solidMask);
+			var hit = Physics2D.Linecast(position + new Vector3(bbox.LeftOffset, bbox.BottomOffset - 1),
+					position + new Vector3(bbox.RightOffset, bbox.BottomOffset - 1), solidMask);
 
 			Ground = hit.collider;
 
-			var hits = Physics2D.LinecastAll(position + new Vector3(rect.leftOffset, rect.bottomOffset - 1),
-					position + new Vector3(rect.rightOffset, rect.bottomOffset - 1), onewayMask);
+			var hits = Physics2D.LinecastAll(position + new Vector3(bbox.LeftOffset, bbox.BottomOffset - 1),
+					position + new Vector3(bbox.RightOffset, bbox.BottomOffset - 1), onewayMask);
 
 			for (int i = 0; i < hits.Length; ++i)
 			{
 				hit = hits[i];
 
-				if (hit && hit.collider.bounds.max.y < PreviousPosition.y + rect.bottomOffset)
+				if (hit && hit.collider.bounds.max.y < PreviousPosition.y + bbox.BottomOffset)
 				{
 					Ground = hit.collider;
 					break;
@@ -171,22 +161,5 @@ namespace Assets.GameLogic.Core
 		{
 			MoveAndCollide(delta);
 		}
-
-#if UNITY_EDITOR
-		private void OnDrawGizmosSelected()
-		{
-			var position = GetComponent<Transform>().position;
-			var tl = position + new Vector3(rect.leftOffset, rect.topOffset);
-			var tr = position + new Vector3(rect.rightOffset, rect.topOffset);
-			var bl = position + new Vector3(rect.leftOffset, rect.bottomOffset);
-			var br = position + new Vector3(rect.rightOffset, rect.bottomOffset);
-
-			Gizmos.color = Color.green;
-			Gizmos.DrawLine(tl, tr);
-			Gizmos.DrawLine(tr, br);
-			Gizmos.DrawLine(br, bl);
-			Gizmos.DrawLine(bl, tl);
-		}
-#endif
 	}
 }

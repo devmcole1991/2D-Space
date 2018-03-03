@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
-using Assets.VariableReferences;
+using Assets.SOVariables;
 
 namespace Assets.GameLogic.Core
 {
@@ -9,6 +9,8 @@ namespace Assets.GameLogic.Core
 		[SerializeField] private IntReference health;
 		[SerializeField] private IntReference maxHealth;
 		[SerializeField] private UnityEvent Depleted;
+
+		public bool IsFull { get { return (health.Value >= maxHealth.Value); } }
 
 		public void Heal(int amount)
 		{
@@ -26,5 +28,28 @@ namespace Assets.GameLogic.Core
 				Depleted.Invoke();
 			}
 		}
+
+#if UNITY_EDITOR
+		private void OnValidate()
+		{
+			if (!maxHealth.EDITOR_IsNull)
+			{
+				if (maxHealth.Value < 1)
+				{
+					maxHealth.Value = 1;
+				}
+
+				if (!health.EDITOR_IsNull && health.Value > maxHealth.Value)
+				{
+					health.Value = maxHealth.Value;
+				}
+			}
+
+			if (!health.EDITOR_IsNull && health.Value < 1)
+			{
+				health.Value = 1;
+			}
+		}
+#endif
 	}
 }

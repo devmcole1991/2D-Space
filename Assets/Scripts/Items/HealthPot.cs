@@ -9,14 +9,17 @@ namespace Assets.GameLogic.Core
 
 		public int HealAmount { get { return healAmount; } }
 
-		public override void Use(GameObject target)
+		public override bool Use(GameObject target)
 		{
 			var health = target.GetComponent<Health>();
 
-			if (health)
+			if (health && !health.IsFull)
 			{
 				health.Heal(healAmount);
+				return true;
 			}
+
+			return false;
 		}
 
 #if UNITY_EDITOR

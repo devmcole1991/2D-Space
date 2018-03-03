@@ -2,11 +2,9 @@
 {
 	public interface IPlatformCharacterController
 	{
-		int Up { get; }
-		int Down { get; }
-		int Left { get; }
-		int Right { get; }
-		int JumpPressed { get; }
-		int JumpHeld { get; }
+		int VerticalAxis { get; }
+		int HorizontalAxis { get; }
+		bool JumpPressed { get; }
+		bool JumpHeld { get; }
 	}
 }

@@ -47,10 +47,9 @@ namespace Assets.GameLogic.Core
 
 		public void OnUpdate()
 		{
-			int horizontal = controller.Right - controller.Left;
-			velocity.SetX(runSpeed * horizontal);
+			velocity.SetX(runSpeed * controller.HorizontalAxis);
 
-			if (controller.JumpPressed != 0 && physics.Ground)
+			if (controller.JumpPressed && physics.Ground)
 			{
 				velocity.SetY(jumpSpeed);
 			}
