@@ -3,18 +3,18 @@ using Assets.Update;
 
 namespace Assets.GameLogic.Core
 {
-	public class PlayerController : MonoBehaviour, IPlatformCharacterController, IUpdatable
+	public class PlayerController : MonoBehaviour, IPlatformCharacterController, IPickerUpperController, IShootController, IUpdatable
 	{
-		public int Up { get; private set; }
-		public int Down { get; private set; }
-		public int Left { get; private set; }
-		public int Right { get; private set; }
-		public int JumpPressed { get; private set; }
-		public int JumpHeld { get; private set; }
-        public int ShootPressed { get; private set; }
-        public int ShootHeld { get; private set; }
+		public int VerticalAxis { get; private set; }
+		public int HorizontalAxis { get; private set; }
+		public bool JumpPressed { get; private set; }
+		public bool JumpHeld { get; private set; }
+        public bool ShootPressed { get; private set; }
+        public bool ShootHeld { get; private set; }
 
-        private void OnEnable()
+        public bool WantsToPickUp { get; private set; }
+
+		private void OnEnable()
 		{
 			UpdateManager.PlayerControllerUpdater.Register(this);
 		}
@@ -26,14 +26,13 @@ namespace Assets.GameLogic.Core
 
 		public void OnUpdate()
 		{
-			Up = Input.GetKey(KeyCode.W) ? 1 : 0;
-			Down = Input.GetKey(KeyCode.S) ? 1 : 0;
-			Left = Input.GetKey(KeyCode.A) ? 1 : 0;
-			Right = Input.GetKey(KeyCode.D) ? 1 : 0;
-			JumpPressed = Input.GetKeyDown(KeyCode.Space) ? 1 : 0;
-			JumpHeld = Input.GetKey(KeyCode.Space) ? 1 : 0;
-            ShootPressed = Input.GetKeyDown(KeyCode.Mouse0) ? 1 : 0;
-            ShootHeld = Input.GetKey(KeyCode.Mouse0) ? 1 : 0;
-        }
+			VerticalAxis = (int)Input.GetAxisRaw("Vertical");
+			HorizontalAxis = (int)Input.GetAxisRaw("Horizontal");
+			JumpPressed = Input.GetButtonDown("XBoxA");
+			JumpHeld = Input.GetButton("XBoxA");
+            ShootPressed = Input.GetKeyDown(KeyCode.Mouse0);
+            ShootHeld = Input.GetKey(KeyCode.Mouse0);
+            WantsToPickUp = Input.GetButtonDown("XBoxB");
+		}
 	}
 }

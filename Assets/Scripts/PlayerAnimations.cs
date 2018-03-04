@@ -9,7 +9,7 @@ namespace Assets.GameLogic.Core
     {
         private Velocity velocity;
         private SimulatePhysics physics;
-        private SpriteRenderer renderer;
+        new private SpriteRenderer renderer;
         private Animator animator;
 
         private void Awake()
@@ -22,12 +22,12 @@ namespace Assets.GameLogic.Core
 
         private void OnEnable()
         {
-            UpdateManager.PlayerAnimationsUpdater.Register(this);
+            UpdateManager.GeneralUpdater.Register(this);
         }
 
         private void OnDisable()
         {
-            UpdateManager.PlayerAnimationsUpdater.Deregister(this);
+            UpdateManager.GeneralUpdater.Deregister(this);
         }
 
         public void OnUpdate()
