@@ -59,7 +59,9 @@ namespace Assets.GameLogic.Core
 			verticalStateMachine = VerticalIdle;
 
 			if (targetTransform != null)
+			{
 				targetPreviousPosition = targetTransform.position;
+			}
 		}
 
 		private void OnEnable()
@@ -74,11 +76,11 @@ namespace Assets.GameLogic.Core
 
 		public void OnUpdate()
 		{
-			if (targetTransform == null)
-				return;
-
-			horizontalStateMachine();
-			verticalStateMachine();
+			if (targetTransform != null)
+			{
+				horizontalStateMachine();
+				verticalStateMachine();
+			}
 		}
 
 		private Vector2 GetTargetPositionContained()
