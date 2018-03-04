@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df06eec3ae504d9489c294b4131a0f20, type: 3}
   m_Name: PlayerHleath
   m_EditorClassIdentifier: 
-  value: 1
+  value: 5

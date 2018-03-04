@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba843c7a260da64781c00683b4511f0, type: 3}
   m_Name: ChestOpen
   m_EditorClassIdentifier: 
-  value: 1
+  value: 0
