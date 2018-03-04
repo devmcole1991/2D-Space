@@ -322,6 +322,8 @@
     <Compile Include="Assets\Scripts\SpawnArea.cs" />
     <Compile Include="Assets\Scripts\Static\ClassExtensions.cs" />
     <Compile Include="Assets\Scripts\Static\WorldData.cs" />
+    <Compile Include="Assets\Scripts\UI\SimpleHealthBar.cs" />
+    <Compile Include="Assets\Scripts\UI\UpdatableUI.cs" />
     <Compile Include="Assets\Scripts\UnityEventTrigger\UnityEventEnterTrigger.cs" />
     <Compile Include="Assets\Scripts\UnityEventTrigger\UnityEventExitTrigger.cs" />
     <Compile Include="Assets\Scripts\UnityEventTrigger\UnityEventStayTrigger.cs" />
@@ -338,6 +340,7 @@
     <None Include="Assets\StoreAssets\Marines_And_Turrets\Contact_Info.txt" />
     <None Include="Assets\StoreAssets\Marines_And_Turrets\General_Info.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
 </Project>
