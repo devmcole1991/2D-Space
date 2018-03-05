@@ -13,9 +13,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 51
     width: 1536
+=======
+    x: 10
+    y: 51
+    width: 1582
+>>>>>>> devin-changes
     height: 781
   m_ShowMode: 4
   m_Title: 
@@ -41,7 +47,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1536
+    width: 1582
     height: 781
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -61,7 +67,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1536
+    width: 1582
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -82,7 +88,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 761
-    width: 1536
+    width: 1582
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -104,8 +110,9 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1536
+    width: 1582
     height: 731
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
@@ -117,6 +124,12 @@ MonoBehaviour:
   vertical: 0
   controlID: 14
 >>>>>>> tim-changes
+=======
+  m_MinSize: {x: 681, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+  vertical: 0
+  controlID: 105
+>>>>>>> devin-changes
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,6 +148,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1205
     height: 731
 <<<<<<< HEAD
@@ -148,6 +162,14 @@ MonoBehaviour:
   vertical: 1
   controlID: 15
 >>>>>>> tim-changes
+=======
+    width: 1095
+    height: 731
+  m_MinSize: {x: 406, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
+  vertical: 1
+  controlID: 40
+>>>>>>> devin-changes
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,6 +188,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1205
     height: 446
 <<<<<<< HEAD
@@ -179,6 +202,14 @@ MonoBehaviour:
   vertical: 0
   controlID: 16
 >>>>>>> tim-changes
+=======
+    width: 1095
+    height: 447
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
+  vertical: 0
+  controlID: 41
+>>>>>>> devin-changes
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,10 +226,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 517
     height: 446
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    width: 467
+    height: 447
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> devin-changes
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 14}
@@ -219,6 +257,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 517
     y: 0
     width: 688
@@ -226,11 +265,24 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
+=======
+    x: 467
+    y: 0
+    width: 628
+    height: 447
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
+  m_ActualView: {fileID: 14}
+>>>>>>> devin-changes
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
   m_Selected: 0
+<<<<<<< HEAD
   m_LastSelected: 0
+=======
+  m_LastSelected: 2
+>>>>>>> devin-changes
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -246,9 +298,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 446
     width: 1205
     height: 285
+=======
+    y: 447
+    width: 1095
+    height: 284
+>>>>>>> devin-changes
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 17}
@@ -272,6 +330,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1205
     y: 0
     width: 331
@@ -279,6 +338,15 @@ MonoBehaviour:
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
+=======
+    x: 1095
+    y: 0
+    width: 487
+    height: 731
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 21}
+>>>>>>> devin-changes
   m_Panes:
   - {fileID: 19}
   - {fileID: 20}
@@ -367,6 +435,7 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 92
     width: 515
@@ -374,16 +443,32 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
+=======
+    x: 10
+    y: 547
+    width: 1093
+    height: 263
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_MaximizeOnPlay: 0
+  m_Gizmos: 1
+>>>>>>> devin-changes
   m_Stats: 0
   m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -257.5
     m_HBaseRangeMax: 257.5
     m_VBaseRangeMin: -144.84375
     m_VBaseRangeMax: 144.84375
+=======
+    m_HBaseRangeMin: -218.66667
+    m_HBaseRangeMax: 218.66667
+    m_VBaseRangeMin: -123
+    m_VBaseRangeMax: 123
+>>>>>>> devin-changes
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -400,25 +485,43 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< HEAD
       width: 515
       height: 408
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 257.5, y: 204}
+=======
+      width: 1093
+      height: 246
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 546.5, y: 123}
+>>>>>>> devin-changes
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -257.5
       y: -204
       width: 515
       height: 408
+=======
+      x: -546.5
+      y: -123
+      width: 1093
+      height: 246
+>>>>>>> devin-changes
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 515, y: 425}
+=======
+  m_LastWindowPixelSize: {x: 1093, y: 263}
+>>>>>>> devin-changes
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -444,6 +547,7 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 100
     width: 515
@@ -460,6 +564,18 @@ MonoBehaviour:
     m_LastClickedID: 14092
     m_ExpandedIDs: 9efbffff00000000
 >>>>>>> tim-changes
+=======
+    x: 10
+    y: 100
+    width: 465
+    height: 426
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 44070000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 9cfbffff9efbffff000000002c370000
+>>>>>>> devin-changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -504,6 +620,7 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 527
     y: 100
     width: 684
@@ -511,13 +628,28 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
   lastFramingTime: 4184.598465059835
+=======
+    x: 479
+    y: 100
+    width: 624
+    height: 426
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_SceneLighting: 1
+  lastFramingTime: 357.32809289385983
+>>>>>>> devin-changes
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -668.391, y: -197.99287, z: -5.5}
     speed: 2
     m_Value: {x: -668.391, y: -197.99287, z: -5.5}
+=======
+    m_Target: {x: -326.92664, y: -83.56256, z: -3.125}
+    speed: 2
+    m_Value: {x: -326.92664, y: -83.56256, z: -3.125}
+>>>>>>> devin-changes
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -545,9 +677,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 567.0673
     speed: 2
     m_Value: 567.0673
+=======
+    m_Target: 392.87997
+    speed: 2
+    m_Value: 392.87997
+>>>>>>> devin-changes
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -581,11 +719,96 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 304
     y: 132
     width: 779
     height: 437
   m_PersistentViewDataDictionary: {fileID: 0}
+=======
+    x: 527
+    y: 100
+    width: 684
+    height: 425
+  m_PersistentViewDataDictionary: {fileID: 0}
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AutoRepaintOnSceneChange: 1
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: 663490763026382308, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_DepthBufferBits: 0
+  m_Pos:
+    serializedVersion: 2
+    x: 479
+    y: 100
+    width: 624
+    height: 426
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: 1107633751255852358, guid: 7604c8a468263e4419fabe5e0d2f6904, type: 2}
+    - {fileID: 1107626601759465798, guid: 3afd6a226ac9a194c8552c0701fb0a6a, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 0.4487705
+      e01: 0
+      e02: 0
+      e03: 4.2295074
+      e10: 0
+      e11: 0.4487705
+      e12: 0
+      e13: 120.55533
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.5824468
+      e01: 0
+      e02: 0
+      e03: -5.968094
+      e10: 0
+      e11: 0.5824468
+      e12: 0
+      e13: 65.614365
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 0}
+  m_BreadCrumbs: []
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_SerializedLocked: 0
+  m_CurrentEditor: 0
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+>>>>>>> devin-changes
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -593,6 +816,38 @@ MonoBehaviour:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
+=======
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AutoRepaintOnSceneChange: 0
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: 1561878555887300916, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_DepthBufferBits: 0
+  m_Pos:
+    serializedVersion: 2
+    x: 479
+    y: 100
+    width: 624
+    height: 426
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_AnimEditor: {fileID: 0}
+  m_Locked: 0
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+>>>>>>> devin-changes
   m_EditorHideFlags: 1
   m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -608,10 +863,17 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 546
     width: 1203
     height: 264
+=======
+    x: 10
+    y: 547
+    width: 1093
+    height: 263
+>>>>>>> devin-changes
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -626,6 +888,7 @@ MonoBehaviour:
     m_SearchArea: 0
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
@@ -638,10 +901,18 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/SOData/ChestData
 >>>>>>> tim-changes
+=======
+    - Assets/Scripts
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scripts
+>>>>>>> devin-changes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Devin\Documents\2D Space
   m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 181}
     m_SelectedIDs: ba450000
@@ -653,6 +924,12 @@ MonoBehaviour:
     m_LastClickedID: 11650
     m_ExpandedIDs: 00000000d6270000422d00000a3400008e3500002c38000000ca9a3bffffff7f
 >>>>>>> tim-changes
+=======
+    scrollPos: {x: 0, y: 10}
+    m_SelectedIDs: c8320000
+    m_LastClickedID: 13000
+    m_ExpandedIDs: 00000000dc2700001a2b0000482d0000802d0000c832000062380000ffffff7f
+>>>>>>> devin-changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -681,10 +958,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000004443000040450000ba450000a246000038480000
 =======
     m_ExpandedIDs: 00000000d6270000422d00000a3400008e3500002c380000
 >>>>>>> tim-changes
+=======
+    m_ExpandedIDs: 00000000dc2700001a2b0000482d0000802d0000c832000062380000
+>>>>>>> devin-changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -712,7 +993,11 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c6230000fc2a0000227fffffda290000da2a000006290000b82a0000983000000e2900009c280000262a0000e23000004a300000663000001429000078290000ca2a00007a290000422a00002e290000
+=======
+    m_ExpandedInstanceIDs: c6230000fc2a0000227fffffda290000da2a000006290000b82a0000983000000e2900009c280000262a0000e23000004a300000663000001429000078290000ca2a00007a290000422a00002e290000be290000be2c00002c280000583300004a3ffdff
+>>>>>>> devin-changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -736,7 +1021,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 37}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 230
 --- !u!114 &18
@@ -761,10 +1046,17 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 538
     width: 1203
     height: 264
+=======
+    x: 10
+    y: 547
+    width: 1093
+    height: 263
+>>>>>>> devin-changes
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &19
 MonoBehaviour:
@@ -787,10 +1079,17 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1063
     y: 92
     width: 537
     height: 746
+=======
+    x: 1107
+    y: 100
+    width: 485
+    height: 710
+>>>>>>> devin-changes
   m_PersistentViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
     m_CachedPref: 50
@@ -820,12 +1119,18 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1215
     y: 100
     width: 329
+=======
+    x: 1107
+    y: 100
+    width: 485
+>>>>>>> devin-changes
     height: 710
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 171.95508}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160

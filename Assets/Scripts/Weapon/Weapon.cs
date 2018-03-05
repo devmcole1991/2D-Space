@@ -5,8 +5,8 @@ namespace Assets.GameLogic.Core
 {
     public class Weapon : MonoBehaviour, IUpdatable
     {
-        private IPlatformCharacterController controller;
-        private SpriteRenderer renderer;
+        private IShootController controller;
+        new private SpriteRenderer renderer;
 
         [SerializeField] private float fireRate;
         [SerializeField] private float timeToFire;
@@ -21,7 +21,7 @@ namespace Assets.GameLogic.Core
 
         private void Awake()
         {
-            controller = GetComponent<IPlatformCharacterController>();
+            controller = GetComponent<IShootController>();
             renderer = GetComponent<SpriteRenderer>();
             firePoint = transform.Find("FirePoint");
 
@@ -56,16 +56,20 @@ namespace Assets.GameLogic.Core
                 firePoint.localPosition = new Vector3(posFirePoint.x, posFirePoint.y, 0);
                 firePoint.localRotation = new Quaternion(0, 0, 0, 0);
             }
+<<<<<<< HEAD:Assets/Scripts/Weapon.cs
 
             /*
+=======
+            
+>>>>>>> devin-changes:Assets/Scripts/Weapon/Weapon.cs
             if (fireRate == 0)
             {
-                if (controller.ShootPressed == 1)
+                if (controller.ShootPressed)
                     Shoot();
             }
             else
             {
-                if (controller.ShootHeld == 1 && Time.time > timeToFire)
+                if (controller.ShootHeld && Time.time > timeToFire)
                 {
                     timeToFire = Time.time + 1 / fireRate;
                     Shoot();
@@ -73,7 +77,7 @@ namespace Assets.GameLogic.Core
             }*/
         }
 
-        void Shoot()
+        public void Shoot()
         {
             Vector2 mousePosition = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
             Vector2 firePointPosition = new Vector2(firePoint.position.x, firePoint.position.y);

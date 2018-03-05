@@ -198,7 +198,11 @@ Transform:
   m_LocalScale: {x: 2, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 4
+=======
+  m_RootOrder: 5
+>>>>>>> devin-changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &128018707
 BoxCollider2D:
@@ -243,6 +247,7 @@ MonoBehaviour:
   - {x: 120, y: 35}
   - {x: 70, y: 35}
   - {x: 70, y: 10}
+<<<<<<< HEAD
 --- !u!1 &131387877
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,6 +310,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> devin-changes
 --- !u!1 &301092051
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +350,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &318208541
@@ -439,6 +447,10 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+=======
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> devin-changes
 --- !u!1 &513038860
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,7 +840,11 @@ Tilemap:
   - first: {x: -6, y: 1, z: 0}
     second:
       m_TileIndex: 14
+<<<<<<< HEAD
       m_TileSpriteIndex: 14
+=======
+      m_TileSpriteIndex: 15
+>>>>>>> devin-changes
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -918,7 +934,11 @@ Tilemap:
   - first: {x: 4, y: 1, z: 0}
     second:
       m_TileIndex: 13
+<<<<<<< HEAD
       m_TileSpriteIndex: 13
+=======
+      m_TileSpriteIndex: 14
+>>>>>>> devin-changes
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -1008,7 +1028,11 @@ Tilemap:
   - first: {x: 2, y: 2, z: 0}
     second:
       m_TileIndex: 11
+<<<<<<< HEAD
       m_TileSpriteIndex: 11
+=======
+      m_TileSpriteIndex: 13
+>>>>>>> devin-changes
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -1289,6 +1313,11 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 84217ee741772b84a98764d02319736b, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: d4e8817fc5aeced47929b19d3f4f40f7, type: 2}
+<<<<<<< HEAD
+=======
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+>>>>>>> devin-changes
   m_TileSpriteArray:
   - m_RefCount: 8
     m_Data: {fileID: 21301016, guid: 1a2b20d8c68c0a047a66c566847bd9aa, type: 3}
@@ -1312,11 +1341,21 @@ Tilemap:
     m_Data: {fileID: 21301068, guid: 1a2b20d8c68c0a047a66c566847bd9aa, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 21301066, guid: 1a2b20d8c68c0a047a66c566847bd9aa, type: 3}
+<<<<<<< HEAD
   - m_RefCount: 1
     m_Data: {fileID: 21301064, guid: 1a2b20d8c68c0a047a66c566847bd9aa, type: 3}
   - m_RefCount: 7
     m_Data: {fileID: 21301042, guid: 1a2b20d8c68c0a047a66c566847bd9aa, type: 3}
   - m_RefCount: 1
+=======
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 7
+    m_Data: {fileID: 21301042, guid: 1a2b20d8c68c0a047a66c566847bd9aa, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21301064, guid: 1a2b20d8c68c0a047a66c566847bd9aa, type: 3}
+  - m_RefCount: 1
+>>>>>>> devin-changes
     m_Data: {fileID: 21301012, guid: 1a2b20d8c68c0a047a66c566847bd9aa, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21301010, guid: 1a2b20d8c68c0a047a66c566847bd9aa, type: 3}
@@ -1344,8 +1383,13 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< HEAD
   m_Origin: {x: -6, y: -1, z: 0}
   m_Size: {x: 12, y: 6, z: 1}
+=======
+  m_Origin: {x: -31, y: -10, z: 0}
+  m_Size: {x: 37, y: 15, z: 1}
+>>>>>>> devin-changes
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -1396,6 +1440,7 @@ Tilemap:
     m_DirtyIndex: 0
   - serializedVersion: 1
     m_DirtyIndex: 0
+<<<<<<< HEAD
 --- !u!1 &619552548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,6 +1523,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: {fileID: 11400000, guid: 1e80ce114aa005e41976e595fc2f14b4, type: 2}
   maxHealth: {fileID: 0}
+=======
+  - serializedVersion: 1
+    m_DirtyIndex: 0
+>>>>>>> devin-changes
 --- !u!1 &707366248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,7 +1574,11 @@ Transform:
   - {fileID: 1178448423}
   - {fileID: 1289010584}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 1
+=======
+  m_RootOrder: 2
+>>>>>>> devin-changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &815687213
 GameObject:
@@ -1535,7 +1588,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 815687214}
+<<<<<<< HEAD
   m_Layer: 8
+=======
+  m_Layer: 0
+>>>>>>> devin-changes
   m_Name: CameraFollowTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1566,8 +1623,12 @@ GameObject:
   - component: {fileID: 875732713}
   - component: {fileID: 875732712}
   - component: {fileID: 875732714}
+<<<<<<< HEAD
   - component: {fileID: 875732715}
   m_Layer: 13
+=======
+  m_Layer: 0
+>>>>>>> devin-changes
   m_Name: Spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1914,6 +1975,7 @@ TilemapCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+<<<<<<< HEAD
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1945,6 +2007,12 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: Assets.UnityEventTrigger.UnityEventTriggerBase+UnityEventTriggerEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+=======
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -5}
+>>>>>>> devin-changes
 --- !u!1 &892902554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2103,6 +2171,10 @@ GameObject:
   - component: {fileID: 1071097246}
   - component: {fileID: 1071097251}
   - component: {fileID: 1071097252}
+<<<<<<< HEAD
+=======
+  - component: {fileID: 1071097253}
+>>>>>>> devin-changes
   m_Layer: 8
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -2121,8 +2193,15 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 815687214}
+<<<<<<< HEAD
   m_Father: {fileID: 0}
   m_RootOrder: 2
+=======
+  - {fileID: 1350916178}
+  - {fileID: 1669885195}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+>>>>>>> devin-changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1071097241
 SpriteRenderer:
@@ -2158,7 +2237,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
+<<<<<<< HEAD
   m_Sprite: {fileID: 21300006, guid: a06ccd431b9ad3d4d888902c61b4fff0, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: a06ccd431b9ad3d4d888902c61b4fff0, type: 3}
+>>>>>>> devin-changes
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2287,6 +2370,7 @@ MonoBehaviour:
     useVariable: 1
     variable: 10
     scriptableVariable: {fileID: 0}
+<<<<<<< HEAD
   immuneFrames:
     useVariable: 0
     variable: 0
@@ -2302,6 +2386,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+=======
+>>>>>>> devin-changes
   Depleted:
     m_PersistentCalls:
       m_Calls: []
@@ -2366,6 +2452,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd3cf5708ac2df64f8d9bb69be8a9834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+=======
+--- !u!114 &1071097253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1071097239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1787d3b7a5e492429364d5ef565ae4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRate: 5
+  timeToFire: 0
+  whatToHit:
+    serializedVersion: 2
+    m_Bits: 4294967035
+  BulletPrefab: {fileID: 4277593389538780, guid: 748fe423ecf6a334b87fa2e813545152,
+    type: 2}
+  MuzzleFlashPrefab: {fileID: 4703819105343532, guid: 09956762ddc438c469adc4741398ae38,
+    type: 2}
+>>>>>>> devin-changes
 --- !u!1 &1086747179
 GameObject:
   m_ObjectHideFlags: 0
@@ -2492,7 +2601,11 @@ Transform:
   m_LocalScale: {x: 2, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 6
+=======
+  m_RootOrder: 7
+>>>>>>> devin-changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1178448422
 GameObject:
@@ -2600,6 +2713,91 @@ Tilemap:
     e32: 0
     e33: 1
   m_TileRefreshArray: []
+<<<<<<< HEAD
+=======
+--- !u!1 &1184224225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1184224228}
+  - component: {fileID: 1184224227}
+  - component: {fileID: 1184224226}
+  m_Layer: 13
+  m_Name: Hazard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1184224226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1184224225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1370a816afde9fe44944eaf79a1ad6d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Triggered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e0f54d183a242f24cb4ad6a53c823269, type: 2}
+        m_MethodName: UseWithNoFeedback
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Assets.UnityEventTrigger.UnityEventTriggerBase+UnityEventTriggerEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!61 &1184224227
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1184224225}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 76, y: 8}
+  m_EdgeRadius: 0
+--- !u!4 &1184224228
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1184224225}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -696, y: -156, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> devin-changes
 --- !u!1 &1272202864
 GameObject:
   m_ObjectHideFlags: 0
@@ -2640,6 +2838,7 @@ MonoBehaviour:
     useVariable: 1
     variable: 1
     scriptableVariable: {fileID: 0}
+<<<<<<< HEAD
   immuneFrames:
     useVariable: 1
     variable: 0
@@ -2654,6 +2853,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+=======
+>>>>>>> devin-changes
   Depleted:
     m_PersistentCalls:
       m_Calls:
@@ -2679,6 +2880,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< HEAD
       - m_Target: {fileID: 11400000, guid: 97aea24d752857e45b007a6c6db141fa, type: 2}
         m_MethodName: set_Value
         m_Mode: 6
@@ -2690,6 +2892,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+=======
+>>>>>>> devin-changes
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1272202866
@@ -2792,7 +2996,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 7
+=======
+  m_RootOrder: 8
+>>>>>>> devin-changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1272202870
 BoxCollider2D:
@@ -2937,6 +3145,37 @@ Tilemap:
     e32: 0
     e33: 1
   m_TileRefreshArray: []
+<<<<<<< HEAD
+=======
+--- !u!1 &1350916177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1350916178}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1350916178
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1350916177}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21, y: 21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1071097240}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> devin-changes
 --- !u!1 &1527194811
 GameObject:
   m_ObjectHideFlags: 0
@@ -4377,6 +4616,56 @@ Tilemap:
     m_DirtyIndex: 0
   - serializedVersion: 1
     m_DirtyIndex: 0
+<<<<<<< HEAD
+=======
+--- !u!1001 &1554059047
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4324418238181230, guid: 924d880bf6ca236479d00bce2cadfea0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -623
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324418238181230, guid: 924d880bf6ca236479d00bce2cadfea0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -147
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324418238181230, guid: 924d880bf6ca236479d00bce2cadfea0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324418238181230, guid: 924d880bf6ca236479d00bce2cadfea0, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324418238181230, guid: 924d880bf6ca236479d00bce2cadfea0, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324418238181230, guid: 924d880bf6ca236479d00bce2cadfea0, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324418238181230, guid: 924d880bf6ca236479d00bce2cadfea0, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324418238181230, guid: 924d880bf6ca236479d00bce2cadfea0, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114457987839522760, guid: 924d880bf6ca236479d00bce2cadfea0,
+        type: 2}
+      propertyPath: shootDelay
+      value: 0.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 924d880bf6ca236479d00bce2cadfea0, type: 2}
+  m_IsPrefabParent: 0
+>>>>>>> devin-changes
 --- !u!1 &1573248425
 GameObject:
   m_ObjectHideFlags: 0
@@ -6606,6 +6895,18 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+<<<<<<< HEAD
+=======
+  - first: {x: -28, y: -10, z: 0}
+    second:
+      m_TileIndex: 44
+      m_TileSpriteIndex: 30
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+>>>>>>> devin-changes
   - first: {x: -25, y: -10, z: 0}
     second:
       m_TileIndex: 10
@@ -6669,6 +6970,18 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+<<<<<<< HEAD
+=======
+  - first: {x: -28, y: -9, z: 0}
+    second:
+      m_TileIndex: 44
+      m_TileSpriteIndex: 30
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+>>>>>>> devin-changes
   - first: {x: -23, y: -9, z: 0}
     second:
       m_TileIndex: 10
@@ -8442,8 +8755,13 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 12c255069c55d1340aa24337085fb242, type: 2}
   - m_RefCount: 28
     m_Data: {fileID: 11400000, guid: f024dc546a69f5b439869757d2d47ee2, type: 2}
+<<<<<<< HEAD
   - m_RefCount: 0
     m_Data: {fileID: 0}
+=======
+  - m_RefCount: 2
+    m_Data: {fileID: 11400000, guid: c38839bddc14d1a43af81e37f2fb5796, type: 2}
+>>>>>>> devin-changes
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 963fb8bbde3d9724d8403b2b5f423c6c, type: 2}
   - m_RefCount: 15
@@ -8561,8 +8879,13 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 6
     m_Data: {fileID: 21300182, guid: 1a2b20d8c68c0a047a66c566847bd9aa, type: 3}
+<<<<<<< HEAD
   - m_RefCount: 0
     m_Data: {fileID: 0}
+=======
+  - m_RefCount: 2
+    m_Data: {fileID: 21300548, guid: 1a2b20d8c68c0a047a66c566847bd9aa, type: 3}
+>>>>>>> devin-changes
   - m_RefCount: 1
     m_Data: {fileID: 21300178, guid: 1a2b20d8c68c0a047a66c566847bd9aa, type: 3}
   - m_RefCount: 1
@@ -8648,7 +8971,11 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: 21300154, guid: 1a2b20d8c68c0a047a66c566847bd9aa, type: 3}
   m_TileMatrixArray:
+<<<<<<< HEAD
   - m_RefCount: 433
+=======
+  - m_RefCount: 435
+>>>>>>> devin-changes
     m_Data:
       e00: 1
       e01: 0
@@ -8667,7 +8994,11 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
+<<<<<<< HEAD
   - m_RefCount: 433
+=======
+  - m_RefCount: 435
+>>>>>>> devin-changes
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
@@ -8848,10 +9179,45 @@ TilemapCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+<<<<<<< HEAD
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+=======
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+--- !u!1 &1669885194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1669885195}
+  m_Layer: 8
+  m_Name: TrackPlayerPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1669885195
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1669885194}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 17, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1071097240}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> devin-changes
 --- !u!1 &1762672567
 GameObject:
   m_ObjectHideFlags: 0
@@ -8978,7 +9344,11 @@ Transform:
   m_LocalScale: {x: 2, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 5
+=======
+  m_RootOrder: 6
+>>>>>>> devin-changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1907867220
 GameObject:
