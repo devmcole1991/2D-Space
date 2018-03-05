@@ -55,9 +55,20 @@
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\DestroyOnAwake.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Scripts\GameEvent\GameEvent.cs" />
      <Compile Include="Assets\Scripts\GameEvent\GameEventListener.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
+=======
+     <Compile Include="Assets\Scripts\EnemyFOV.cs" />
+     <Compile Include="Assets\Scripts\EnemyFOVEditor.cs" />
+     <Compile Include="Assets\Scripts\EnemyShoot.cs" />
+     <Compile Include="Assets\Scripts\EnemyWeapon.cs" />
+     <Compile Include="Assets\Scripts\GameEvent\GameEvent.cs" />
+     <Compile Include="Assets\Scripts\GameEvent\GameEventListener.cs" />
+     <Compile Include="Assets\Scripts\Health.cs" />
+     <Compile Include="Assets\Scripts\Items\DamageItem.cs" />
+>>>>>>> devin-changes
      <Compile Include="Assets\Scripts\Items\HealthPot.cs" />
      <Compile Include="Assets\Scripts\Items\ItemBase.cs" />
      <Compile Include="Assets\Scripts\Managers\UpdateManager.cs" />
@@ -88,11 +99,23 @@
      <Compile Include="Assets\Scripts\SpawnArea.cs" />
      <Compile Include="Assets\Scripts\Static\ClassExtensions.cs" />
      <Compile Include="Assets\Scripts\Static\WorldData.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Scripts\UnityEventTrigger.cs" />
      <Compile Include="Assets\Scripts\Updater\IUpdatable.cs" />
      <Compile Include="Assets\Scripts\Updater\IUpdater.cs" />
      <Compile Include="Assets\Scripts\Updater\Updater.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
+=======
+     <Compile Include="Assets\Scripts\UnityEventTrigger\UnityEventEnterTrigger.cs" />
+     <Compile Include="Assets\Scripts\UnityEventTrigger\UnityEventExitTrigger.cs" />
+     <Compile Include="Assets\Scripts\UnityEventTrigger\UnityEventStayTrigger.cs" />
+     <Compile Include="Assets\Scripts\UnityEventTrigger\UnityEventTriggerBase.cs" />
+     <Compile Include="Assets\Scripts\Updater\IUpdatable.cs" />
+     <Compile Include="Assets\Scripts\Updater\IUpdater.cs" />
+     <Compile Include="Assets\Scripts\Updater\Updater.cs" />
+     <Compile Include="Assets\Scripts\Weapon\IShootController.cs" />
+     <Compile Include="Assets\Scripts\Weapon\Weapon.cs" />
+>>>>>>> devin-changes
      <None Include="Assets\StoreAssets\Marines_And_Turrets\Contact_Info.txt" />
      <None Include="Assets\StoreAssets\2D Pixel Spacecraft Tileset\Get FREE Custom Pixel Art From Me.txt" />
      <None Include="Assets\StoreAssets\2D Pixel Spacecraft Tileset\How to use Tilesets.txt" />

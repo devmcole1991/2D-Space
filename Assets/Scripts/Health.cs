@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+<<<<<<< HEAD
 using System.Collections;
+=======
+>>>>>>> devin-changes
 using Assets.SOVariables;
 
 namespace Assets.GameLogic.Core
@@ -9,6 +12,7 @@ namespace Assets.GameLogic.Core
 	{
 		[SerializeField] private IntReference health;
 		[SerializeField] private IntReference maxHealth;
+<<<<<<< HEAD
 		[SerializeField] private IntReference immuneFrames;
 		[SerializeField] private UnityEvent Healed;
 		[SerializeField] private UnityEvent Damaged;
@@ -23,16 +27,25 @@ namespace Assets.GameLogic.Core
 		{
 			IsImmune = false;
 		}
+=======
+		[SerializeField] private UnityEvent Depleted;
+
+		public bool IsFull { get { return (health.Value >= maxHealth.Value); } }
+>>>>>>> devin-changes
 
 		public void Heal(int amount)
 		{
 			amount = amount < 0 ? 0 : amount;
 			health.Value = Mathf.Min(health.Value + amount, maxHealth.Value);
+<<<<<<< HEAD
 			Healed.Invoke();
+=======
+>>>>>>> devin-changes
 		}
 
 		public void Damage(int amount)
 		{
+<<<<<<< HEAD
 			if (amount > 0 && !IsImmune)
 			{
 				health.Value = Mathf.Max(health.Value - amount, 0);
@@ -64,6 +77,17 @@ namespace Assets.GameLogic.Core
 			IsImmune = false;
 		}
 
+=======
+			amount = amount < 0 ? 0 : amount;
+			health.Value = Mathf.Max(health.Value - amount, 0);
+
+			if (health.Value == 0)
+			{
+				Depleted.Invoke();
+			}
+		}
+
+>>>>>>> devin-changes
 #if UNITY_EDITOR
 		private void OnValidate()
 		{

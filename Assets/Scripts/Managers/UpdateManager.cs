@@ -16,7 +16,10 @@ namespace Assets.GameLogic.Core
 		private static Updater<SimulatePhysics> simulatePhysicsUpdater = new Updater<SimulatePhysics>();
 		private static Updater<FollowPath> followPathUpdater = new Updater<FollowPath>();
 		private static Updater<MovingPlatform> movingPlatformUpdater = new Updater<MovingPlatform>();
+<<<<<<< HEAD
 		private static Updater<UpdatableUI> uiUpdater = new Updater<UpdatableUI>();
+=======
+>>>>>>> devin-changes
 
 		public static IUpdater<IUpdatable> GeneralUpdater { get { return generalUpdater; } }
 		public static IUpdater<PlayerController> PlayerControllerUpdater { get { return playerControllerUpdater; } }
@@ -26,7 +29,10 @@ namespace Assets.GameLogic.Core
 		public static IUpdater<SimulatePhysics> SimulatePhysicsUpdater { get { return simulatePhysicsUpdater; } }
 		public static IUpdater<FollowPath> FollowPathUpdater { get { return followPathUpdater; } }
 		public static IUpdater<MovingPlatform> MovingPlatformUpdater { get { return movingPlatformUpdater; } }
+<<<<<<< HEAD
 		public static IUpdater<UpdatableUI> UiUpdater { get { return uiUpdater; } }
+=======
+>>>>>>> devin-changes
 		
 		private void Awake()
         {
@@ -55,7 +61,10 @@ namespace Assets.GameLogic.Core
 			simulatePhysicsUpdater.Update();
 
 			generalUpdater.Update();
+<<<<<<< HEAD
 			uiUpdater.Update();
+=======
+>>>>>>> devin-changes
         }
     }
 }

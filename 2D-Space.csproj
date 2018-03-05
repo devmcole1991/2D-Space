@@ -320,8 +320,11 @@
     <Compile Include="Assets\Scripts\SpawnArea.cs" />
     <Compile Include="Assets\Scripts\Static\ClassExtensions.cs" />
     <Compile Include="Assets\Scripts\Static\WorldData.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\UI\SimpleHealthBar.cs" />
     <Compile Include="Assets\Scripts\UI\UpdatableUI.cs" />
+=======
+>>>>>>> devin-changes
     <Compile Include="Assets\Scripts\UnityEventTrigger\UnityEventEnterTrigger.cs" />
     <Compile Include="Assets\Scripts\UnityEventTrigger\UnityEventExitTrigger.cs" />
     <Compile Include="Assets\Scripts\UnityEventTrigger\UnityEventStayTrigger.cs" />

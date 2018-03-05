@@ -59,9 +59,13 @@ namespace Assets.GameLogic.Core
 			verticalStateMachine = VerticalIdle;
 
 			if (targetTransform != null)
+<<<<<<< HEAD
 			{
 				targetPreviousPosition = targetTransform.position;
 			}
+=======
+				targetPreviousPosition = targetTransform.position;
+>>>>>>> devin-changes
 		}
 
 		private void OnEnable()
@@ -76,11 +80,19 @@ namespace Assets.GameLogic.Core
 
 		public void OnUpdate()
 		{
+<<<<<<< HEAD
 			if (targetTransform != null)
 			{
 				horizontalStateMachine();
 				verticalStateMachine();
 			}
+=======
+			if (targetTransform == null)
+				return;
+
+			horizontalStateMachine();
+			verticalStateMachine();
+>>>>>>> devin-changes
 		}
 
 		private Vector2 GetTargetPositionContained()
