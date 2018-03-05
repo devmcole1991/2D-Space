@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.3.1f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -322,6 +320,8 @@
     <Compile Include="Assets\Scripts\SpawnArea.cs" />
     <Compile Include="Assets\Scripts\Static\ClassExtensions.cs" />
     <Compile Include="Assets\Scripts\Static\WorldData.cs" />
+    <Compile Include="Assets\Scripts\UI\SimpleHealthBar.cs" />
+    <Compile Include="Assets\Scripts\UI\UpdatableUI.cs" />
     <Compile Include="Assets\Scripts\UnityEventTrigger\UnityEventEnterTrigger.cs" />
     <Compile Include="Assets\Scripts\UnityEventTrigger\UnityEventExitTrigger.cs" />
     <Compile Include="Assets\Scripts\UnityEventTrigger\UnityEventStayTrigger.cs" />
