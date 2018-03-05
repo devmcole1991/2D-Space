@@ -3,9 +3,8 @@ using Assets.Update;
 
 namespace Assets.GameLogic.Core
 {
-    public class Weapon : MonoBehaviour, IUpdatable
+    public class EnemyWeapon : MonoBehaviour, IUpdatable
     {
-        private IPlatformCharacterController controller;
         new private SpriteRenderer renderer;
 
         [SerializeField] private float fireRate;
@@ -16,11 +15,16 @@ namespace Assets.GameLogic.Core
         public Transform MuzzleFlashPrefab;
         Transform firePoint;
 
+        Vector2 posFirePoint;
+        Vector2 negFirePoint;
+
         private void Awake()
         {
-            controller = GetComponent<IPlatformCharacterController>();
             renderer = GetComponent<SpriteRenderer>();
             firePoint = transform.Find("FirePoint");
+
+            posFirePoint = new Vector2(firePoint.localPosition.x, firePoint.localPosition.y);
+            negFirePoint = new Vector2(-firePoint.localPosition.x, firePoint.localPosition.y);
 
             if (firePoint == null)
             {
@@ -42,35 +46,20 @@ namespace Assets.GameLogic.Core
         {
             if (renderer.flipX)
             {
-                firePoint.localPosition = new Vector3(-21, 21, 0);
+                firePoint.localPosition = new Vector3(negFirePoint.x, negFirePoint.y, 0);
                 firePoint.localRotation = new Quaternion(0, 180, 0, 0);
             }
             else
             {
-                firePoint.localPosition = new Vector3(21, 21, 0);
+                firePoint.localPosition = new Vector3(posFirePoint.x, posFirePoint.y, 0);
                 firePoint.localRotation = new Quaternion(0, 0, 0, 0);
-            }
-
-            if (fireRate == 0)
-            {
-                //if (controller.ShootPressed == 1)
-                //    Shoot();
-            }
-            else
-            {
-                //if (controller.ShootHeld == 1 && Time.time > timeToFire)
-                //{
-                //    timeToFire = Time.time + 1 / fireRate;
-                //    Shoot();
-                //}
             }
         }
 
-        void Shoot()
+        public void Shoot()
         {
-            Vector2 mousePosition = new Vector2(Camera.main.ScreenToWorldPoint (Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
             Vector2 firePointPosition = new Vector2(firePoint.position.x, firePoint.position.y);
-            RaycastHit2D hit = Physics2D.Raycast(firePointPosition, mousePosition-firePointPosition, 100, whatToHit);
+            RaycastHit2D hit = Physics2D.Raycast(firePointPosition, firePointPosition, 100, whatToHit);
             Effect();
         }
 
