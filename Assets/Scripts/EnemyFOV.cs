@@ -16,7 +16,7 @@ public class EnemyFOV : MonoBehaviour
 
     void Awake()
     {
-        StartCoroutine("FindTargetAfterDelay", 0.2f);
+        StartCoroutine("FindTargetAfterDelay", 0.1f);
     }
 
     IEnumerator FindTargetAfterDelay(float delay)
