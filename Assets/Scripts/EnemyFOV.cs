@@ -6,14 +6,12 @@ public class EnemyFOV : MonoBehaviour
 {
 
     public float viewRadius;
-    [Range(0, 360)]
-    public float viewAngle;
+    [Range(0, 360)] public float viewAngle;
 
     public LayerMask targetMask;
     public LayerMask obstructionMask;
 
-    [HideInInspector]
-    public List<Transform> visiblePlayers = new List<Transform>();
+    [HideInInspector] public List<Transform> visiblePlayers = new List<Transform>();
     Transform trackPlayerPosition;
 
     void Awake()

@@ -3,8 +3,6 @@ using Assets.Update;
 
 namespace Assets.GameLogic.Core
 {
-    [RequireComponent(typeof(IShootController))]
-
     public class Weapon : MonoBehaviour, IUpdatable
     {
         private IShootController controller;
@@ -58,7 +56,7 @@ namespace Assets.GameLogic.Core
                 firePoint.localPosition = new Vector3(posFirePoint.x, posFirePoint.y, 0);
                 firePoint.localRotation = new Quaternion(0, 0, 0, 0);
             }
-
+            
             if (fireRate == 0)
             {
                 if (controller.ShootPressed)
@@ -74,7 +72,7 @@ namespace Assets.GameLogic.Core
             }
         }
 
-        void Shoot()
+        public void Shoot()
         {
             Vector2 mousePosition = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
             Vector2 firePointPosition = new Vector2(firePoint.position.x, firePoint.position.y);

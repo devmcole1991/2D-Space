@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
-  bulletSpeed: 10
+  bulletSpeed: 300
   BulletHit:
     m_PersistentCalls:
       m_Calls: []
